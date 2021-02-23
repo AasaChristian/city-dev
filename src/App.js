@@ -1,5 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
+import desert from './img/desert.jpg'
+import mist from './img/mist.jpg'
+import volcano from './img/volcano.jpg'
+
+
 
 function App() {
   return (
@@ -56,6 +61,9 @@ function App() {
                 width: "99.5%",
                 border: "solid black 5px",
                 height: "70%",
+                backgroundImage: `url(${desert})`,
+                backgroundSize: '100%',
+                backgroundPosition: '1%'
               }}
             >
               <section

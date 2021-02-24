@@ -3,6 +3,8 @@ import "./App.css";
 import desert from './img/desert.jpg'
 import mist from './img/mist.jpg'
 import volcano from './img/volcano.jpg'
+import city from './img/city.jpg'
+import HeaderButtons from './components/HeaderButtons'
 
 
 
@@ -13,7 +15,7 @@ function App() {
         style={{
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "white",
+          backgroundColor: "#AAC0AA",
           height: "15%",
         }}
       >
@@ -23,18 +25,31 @@ function App() {
         <section
           style={{
             display: "flex",
-            backgroundColor: "red",
+            justifyContent: 'space-evenly',
             height: "8%",
             borderRadius: "3%",
           }}
         >
           {" "}
-          <div>
-            <h1>BOX 1</h1>
-          </div>
+
+<HeaderButtons
+buttonTitle='About Me'
+/>
+
+<HeaderButtons
+buttonTitle='Solo Projects'
+/>
+
+<HeaderButtons
+buttonTitle='Group Projects'
+/>
+
+<HeaderButtons
+buttonTitle='Resume'
+/>
         </section>
 
-        <section
+        {/* <section
           style={{
             display: "flex",
             backgroundColor: "white",
@@ -45,23 +60,23 @@ function App() {
           <div>
             <h1>BOX 2</h1>
           </div>
-        </section>
+        </section> */}
 
         <section
-          style={{ display: "flex", backgroundColor: "blue", height: "100%" }}
+          style={{ display: "flex", backgroundColor: "#AAC0AA", height: "100%" }}
         >
           <div
             style={{ width: "100%", display: "flex", flexDirection: "column" }}
           >
-            <h1>Main</h1>
+            <h1>Hello! I'm Aasa Christian!</h1>
 
             <section
               style={{
                 display: "flex",
                 width: "99.5%",
                 border: "solid black 5px",
-                height: "70%",
-                backgroundImage: `url(${desert})`,
+                height: "90%",
+                backgroundImage: `url(${city})`,
                 backgroundSize: '100%',
                 backgroundPosition: '1%'
               }}
@@ -86,7 +101,7 @@ function App() {
             </section>
           </div>
         </section>
-        <section>
+        <section style={{backgroundColor: "#AAC0AA"}}>
           <h1>Footer</h1>
         </section>
       </div>

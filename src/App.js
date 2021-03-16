@@ -15,11 +15,12 @@ function App() {
         style={{
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "#AAC0AA",
+          backgroundColor: "white",
+          border: "solid #45425A 10px",
           height: "15%",
         }}
       >
-        <h1>Header</h1>
+        <h1 style={{borderBottom:'solid black 5px', height: '40px'}}>Header</h1>
       </header>
       <div style={{ height: "80%" }}>
         <section
@@ -28,6 +29,7 @@ function App() {
             justifyContent: 'space-evenly',
             height: "8%",
             borderRadius: "3%",
+            border: "solid #45425A 5px"
           }}
         >
           {" "}
@@ -63,7 +65,7 @@ buttonTitle='Resume'
         </section> */}
 
         <section
-          style={{ display: "flex", backgroundColor: "#AAC0AA", height: "100%" }}
+          style={{ display: "flex", backgroundColor: "white", height: "100%", border: "solid #45425A 10px" }}
         >
           <div
             style={{ width: "100%", display: "flex", flexDirection: "column" }}
@@ -101,7 +103,7 @@ buttonTitle='Resume'
             </section>
           </div>
         </section>
-        <section style={{backgroundColor: "#AAC0AA"}}>
+        <section style={{backgroundColor: "white", border: "solid #45425A 10px"}}>
           <h1>Footer</h1>
         </section>
       </div>

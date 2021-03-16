@@ -1,14 +1,17 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import desert from './img/desert.jpg'
-import mist from './img/mist.jpg'
-import volcano from './img/volcano.jpg'
 import city from './img/city.jpg'
 import HeaderButtons from './components/HeaderButtons'
+import { useState } from "react";
 
 
 
 function App() {
+  const [showPop, setShowPop] = useState(false)
+  const flipPop = (e) => {
+    e.preventDefault()
+    setShowPop(!showPop)
+  }
   return (
     <div className="App">
       <header
@@ -50,19 +53,11 @@ buttonTitle='Group Projects'
 buttonTitle='Resume'
 />
         </section>
-
-        {/* <section
-          style={{
-            display: "flex",
-            backgroundColor: "white",
-            height: "8%",
-            borderRadius: "3%",
-          }}
-        >
-          <div>
-            <h1>BOX 2</h1>
-          </div>
-        </section> */}
+<section className="popUpBox" style={{position: 'absolute', height: "73%", width: '80%', marginLeft: '10%', backgroundColor: 'white', top: '5', marginTop: "4.5%", borderRadius: '3%', border: "solid black 10px"}}>
+  <div>
+    <h1>POP UP BOX</h1>
+  </div>
+</section>
 
         <section
           style={{ display: "flex", backgroundColor: "white", height: "100%", border: "solid #45425A 10px" }}

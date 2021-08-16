@@ -3,13 +3,13 @@ import "./App.css";
 import city from './img/city.jpg'
 import HeaderButtons from './components/HeaderButtons'
 import { useState } from "react";
+import PopUpBox from "./components/PopUpBox";
 
 
 
 function App() {
   const [showPop, setShowPop] = useState(false)
-  const flipPop = (e) => {
-    e.preventDefault()
+  const flipPop = () => {
     setShowPop(!showPop)
   }
   return (
@@ -17,13 +17,16 @@ function App() {
       <header
         style={{
           display: "flex",
+          flexDirection: 'column',
           justifyContent: "center",
           backgroundColor: "white",
           border: "solid #45425A 10px",
           height: "15%",
         }}
       >
-        <h1 style={{borderBottom:'solid black 5px', height: '40px'}}>Header</h1>
+        <h1 style={{height: '20px'}}>Aasa Christian & City Web Developement presents</h1>
+        <h1 style={{ height: '20px'}}>Ace City</h1>
+
       </header>
       <div style={{ height: "80%" }}>
         <section
@@ -38,26 +41,29 @@ function App() {
           {" "}
 
 <HeaderButtons
+flipPop={flipPop}
 buttonTitle='About Me'
 />
 
 <HeaderButtons
+flipPop={flipPop}
 buttonTitle='Solo Projects'
 />
 
 <HeaderButtons
+flipPop={flipPop}
 buttonTitle='Group Projects'
 />
 
 <HeaderButtons
+flipPop={flipPop}
 buttonTitle='Resume'
 />
         </section>
-<section className="popUpBox" style={{position: 'absolute', height: "73%", width: '80%', marginLeft: '10%', backgroundColor: 'white', top: '5', marginTop: "4.5%", borderRadius: '3%', border: "solid black 10px"}}>
-  <div>
-    <h1>POP UP BOX</h1>
-  </div>
-</section>
+
+<PopUpBox 
+showPop={showPop}
+/>
 
         <section
           style={{ display: "flex", backgroundColor: "white", height: "100%", border: "solid #45425A 10px" }}

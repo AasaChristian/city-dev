@@ -8,7 +8,7 @@ const onClick = (e) => {
 }
 
     return(
-        <div onClick={onClick} style={{border: 'solid black 2px', display:'flex', flexDirection: 'column', justifyContent: 'center', borderRadius: "15%",}}>
+        <div onClick={onClick} style={{ display:'flex', flexDirection: 'column', justifyContent: 'center', }}>
         <h1
         
         > {buttonTitle} </h1>

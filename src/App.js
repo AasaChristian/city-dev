@@ -1,9 +1,10 @@
 
 import "./App.css";
-import city from './img/city.jpg'
+import CropCity from './img/CropCity.jpg'
 import HeaderButtons from './components/HeaderButtons'
 import { useState } from "react";
 import PopUpBox from "./components/PopUpBox";
+
 
 
 
@@ -19,13 +20,16 @@ function App() {
           display: "flex",
           flexDirection: 'column',
           justifyContent: "center",
-          backgroundColor: "white",
+          // backgroundColor: "white",
           border: "solid #45425A 10px",
           height: "15%",
+          backgroundImage: `url(${CropCity})`,
+          backgroundSize: '100%',
+          backgroundPosition: 'center'
         }}
       >
-        <h1 style={{height: '20px'}}>Aasa Christian & City Web Developement presents</h1>
-        <h1 style={{ height: '20px'}}>Ace City</h1>
+        {/* <h1 style={{height: '20px'}}>Aasa Christian & City Web Developement presents</h1> */}
+        <h1 style={{fontSize: '500%', color: 'white'}}>Ace City</h1>
 
       </header>
       <div style={{ height: "80%" }}>
@@ -34,7 +38,7 @@ function App() {
             display: "flex",
             justifyContent: 'space-evenly',
             height: "8%",
-            borderRadius: "3%",
+            // borderRadius: "3%",
             border: "solid #45425A 5px"
           }}
         >
@@ -73,13 +77,13 @@ showPop={showPop}
           >
             <h1>Hello! I'm Aasa Christian!</h1>
 
-            <section
+            {/* <section
               style={{
                 display: "flex",
                 width: "99.5%",
                 border: "solid black 5px",
                 height: "90%",
-                backgroundImage: `url(${city})`,
+                backgroundImage: `url(${CropCity})`,
                 backgroundSize: '100%',
                 backgroundPosition: '1%'
               }}
@@ -101,7 +105,7 @@ showPop={showPop}
                   </div>
                 </div>
               </section>
-            </section>
+            </section> */}
           </div>
         </section>
         <section style={{backgroundColor: "white", border: "solid #45425A 10px"}}>
